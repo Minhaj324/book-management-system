@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind utilities;
+
+/* Theme variables */
+:root {
+  --color-primary: #4b3621; /* Blue-600 */
+  --color-secondary: #9333ea; /* Purple-600 */
+  --color-accent: #f43f5e; /* Rose-500 */
+  --color-bg: #f9fafb; /* Light background */
+  --color-text: #1e293b; /* Slate-800 */
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #3b82f6;
+    --color-secondary: #a855f7;
+    --color-accent: #fb7185;
+    --color-bg: #0f172a;
+    --color-text: #f1f5f9;
+  }
+}
+
+body {
+  @apply bg-bg text-text font-sans;
+}
